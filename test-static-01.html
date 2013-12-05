@@ -18,6 +18,7 @@
                     "left","up","right","down",
                     "f1","f2","f3","f4","f5","f6","f7","f8","f9","f10","f11","f12",
                     "1","2","3","4","5","6","7","8","9","0",
+                    "-", "=", ":", ";", ".", ",", "'", "[", "]", "\\","/",
                     "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
                     "Ctrl+a","Ctrl+b","Ctrl+c","Ctrl+d","Ctrl+e","Ctrl+f","Ctrl+g","Ctrl+h","Ctrl+i","Ctrl+j","Ctrl+k","Ctrl+l","Ctrl+m",
                     "Ctrl+n","Ctrl+o","Ctrl+p","Ctrl+q","Ctrl+r","Ctrl+s","Ctrl+t","Ctrl+u","Ctrl+v","Ctrl+w","Ctrl+x","Ctrl+y","Ctrl+z",
@@ -38,7 +39,7 @@
                     "Alt+insert","Alt+home","Alt+del","Alt+end","Alt+pageup","Alt+pagedown","Alt+left","Alt+up","Alt+right","Alt+down",
                     "Alt+f1","Alt+f2","Alt+f3","Alt+f4","Alt+f5","Alt+f6","Alt+f7","Alt+f8","Alt+f9","Alt+f10","Alt+f11","Alt+f12"
                 ];
-                
+
                 // the fetching...
                 $.each(elements, function(i, e) { // i is element index. e is element as text.
                    var newElement = ( /[\+]+/.test(elements[i]) ) ? elements[i].replace("+","_") : elements[i];
@@ -85,6 +86,11 @@ class="eventNotifier">f4</div><div id="_f5" class="eventNotifier">f5</div><div i
 <div id="_9" class="eventNotifier">9</div>
 <div id="_0" class="eventNotifier">0</div>
 <div style="clear: both;"/>
+
+<h2>Other characters</h2>
+<div id="_minus" class="eventNotifier">-</div><div id="_equals" class="eventNotifier">=</div><div id="_semicolon" class="eventNotifier">;</div><div id="_quote" class="eventNotifier">'</div><div id="_comma" class="eventNotifier">,</div><div id="_dot" class="eventNotifier">.</div><div id="_backslash" class="eventNotifier">\</div><div id="_slash" class="eventNotifier">/</div><div id="_openbracket" class="eventNotifier">[</div><div id="_closebracket" class="eventNotifier">]</div>
+<div style="clear: both;"/>
+
 <h2>A-Z Letters</h2>
 
 <div id="_a" class="eventNotifier">a</div>
